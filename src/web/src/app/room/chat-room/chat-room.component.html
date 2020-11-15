@@ -1,0 +1,16 @@
+<div class="chat-room">
+    <div class="messages">
+        <div *ngFor="let message of messages" class="message" [class.self]="message.self">
+            <span>{{message.text}}</span>
+        </div>
+    </div>
+
+    <form [formGroup]="inputMessageForm" (ngSubmit)="sendMessage()">
+        <div class="send-message">
+            <input placeholder="Write something" formControlName="text" autofocus>
+            <button type="submit">
+                Send
+            </button>
+        </div>
+    </form>
+</div>

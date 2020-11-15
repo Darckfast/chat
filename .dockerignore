@@ -1,0 +1,9 @@
+dist/
+tmp/
+app/**/*.js
+app/**/*.js.map
+
+e2e/*.js
+e2e/*.map
+
+node_modules/

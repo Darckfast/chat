@@ -1,0 +1,22 @@
+<form [formGroup]="loginForm" (ngSubmit)="joinChat()">
+    <div class="user-input">
+        <label for="username">
+            Username:
+            <input id="username" formControlName="username">
+        </label>
+
+        <label for="password">
+            Password:
+            <input id="password" type="password" formControlName="password">
+        </label>
+
+        <label for="chatid">
+            Chat ID:
+            <input id="chatid" formControlName="chatId">
+        </label>
+
+        <button [disabled]="loginForm.invalid" type="submit">
+            Join
+        </button>
+    </div>
+</form>
