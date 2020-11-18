@@ -1,11 +1,11 @@
 <form [formGroup]="loginForm" (ngSubmit)="joinChat()">
     <div class="user-input">
-        <label for="username">
+        <label *ngIf="hasNoAuthToken()" for="username">
             Username:
             <input id="username" formControlName="username">
         </label>
 
-        <label for="password">
+        <label *ngIf="hasNoAuthToken()" for="password">
             Password:
             <input id="password" type="password" formControlName="password">
         </label>
@@ -15,8 +15,12 @@
             <input id="chatid" formControlName="chatId">
         </label>
 
-        <button [disabled]="loginForm.invalid" type="submit">
+        <button class="join" [disabled]="loginForm.invalid" type="submit">
             Join
+        </button>
+
+        <button *ngIf="!hasNoAuthToken()" class="logout">
+            Logout
         </button>
     </div>
 </form>

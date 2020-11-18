@@ -13,6 +13,13 @@
 
   flex-direction: column;
 
+  .info {
+    height: 7%;
+    width: 90%;
+
+    border-bottom: 1px solid #f1f1f1;
+  }
+
   .messages {
     display: flex;
     margin-top: 1.2em;
