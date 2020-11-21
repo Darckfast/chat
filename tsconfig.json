@@ -17,11 +17,14 @@
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "baseUrl": ".",
+    "baseUrl": ".", 
     "paths": {
       "@controllers/*": [
         "./src/controllers/*"
       ] 
     }
-  }
+  },
+  "include": [
+    "src/**/*"
+  ]
 }
