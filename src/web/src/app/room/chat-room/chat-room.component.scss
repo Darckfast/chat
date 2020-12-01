@@ -28,10 +28,9 @@
     flex-direction: column;
 
     .message {
-      margin: 0 1em 0.5em 1em;
+      margin: 0 2em 0.5em 2em;
 
       align-self: flex-start;
-      // background-color: #c5e3f6;
       background-color: lighten(#2d6cdf, 35%);
       padding: 1em;
       border-radius: 8px;
@@ -39,8 +38,6 @@
       &.self {
         align-self: flex-end;
         background-color: lighten(#2d6cdf, 20%);
-
-        // background-color: #46c3db;
       }
     }
   }
@@ -77,4 +74,13 @@
       }
     }
   }
+}
+
+
+@media (min-width: 768px) {
+  .chat-room {
+    width: 40vw;
+    height: 90vh;
+  }
+ 
 }
