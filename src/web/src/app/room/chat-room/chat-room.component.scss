@@ -26,6 +26,7 @@
     height: 100%;
     width: 100%;
     flex-direction: column;
+    overflow-y: scroll;
 
     .message {
       margin: 0 2em 0.5em 2em;

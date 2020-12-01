@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core'
 import { FormBuilder, FormGroup, Validators } from '@angular/forms'
 import { ChatRoomService } from 'src/app/services/chat-room.service'
-import { v4 } from 'uuid'
 
 @Component({
   selector: 'app-chat-room',
