@@ -32,7 +32,5 @@ app.get('/', (req, res) => {
   res.sendFile(path.resolve(__dirname, 'web', 'index.html'))
 })
 
-// app.use('/**', Api)
-
 server.listen(3000, () => console.log('websocket started'))
 app.listen(3333, () => console.log('http server started'))

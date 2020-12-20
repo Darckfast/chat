@@ -11,8 +11,6 @@ import { ChatRoomService } from 'src/app/services/chat-room.service'
 export class ChatRoomComponent implements OnInit {
   inputMessageForm: FormGroup;
 
-  public static userId: string;
-
   messages: Array<{
     text: string,
     self: boolean
